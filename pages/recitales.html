@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recitales</title>
+    <!--css boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--mi css-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!--letra en font-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caramel&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+    <!-- alt + z es para que se reajuste el texto a la pantalla-->
+<body class="recitalesimg">
+    <div class="contenedor-padre-recitales">
+     <header class="header-reci">
+        <!-- imagen del logo-->
+        <img class="logochico" src="../img/DecyferDown-h1-logo-2016.png" alt="logo de DecyferDown">
+            <!-- nav hace referencia a navegador y el ul li es para hacer una tabla una fila 3 columnas-->
+            <nav>
+                <ul class="menu-index menu-recital">
+                    <li> <a class="boton-recital" href="../index.html">Inicio</a></li>
+                    <li><a class="boton-recital" href="discografia.html">Discografia</a></li>
+                    <li><a class="boton-recital" href="historia.html">Historia</a></li>
+                    <li><a class="boton-recital" href="videos.html">Videos</a></li>
+               </ul>
+            </nav>
+
+    </header>
+    <main class="main-reci">
+            <h1>Recitales proximos de Decyfer Down</h1>
+
+            <!-- creo una tabla para los recitales-->
+
+          
+    
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Estadio</th>
+                    <th scope="col">Fecha</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Geba</td>
+                    <td>10/5/2023</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Mitico</td>
+                    <td>15/5/2023</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Bombonera</td>
+                    <td>20/5/2023</td>
+                  </tr>
+                </tbody>
+              </table>
+
+                <h2 class="entradas">Entradas</h2>
+
+    </main>
+    <section class="section-reci">
+        
+            
+                <input  type="text" class="form-control m-1 text-center" placeholder="Nombre" aria-label="First name">
+                <input type="text" class="form-control m-1 text-center" placeholder="Apellido" aria-label="Last name">
+                <input class="form-control m-1 text-center" list="datalistOptions" id="exampleDataList" placeholder="Teatro...">
+                <datalist id="datalistOptions">
+                <option value="Geba">
+                <option value="Mitico">
+                <option value="Bombonera">
+                </datalist>
+                 
+    </section>
+
+    <footer class="footer-reci">
+            
+        <h2 class="footerfin text-light">Todos los derechos reservados</h2>
+        <img class="iconos-footer" src="../img/logofacebook.png" alt="icono facebook">
+        <img class="iconos-footer" src="../img/logoig.png" alt="icono instagram">
+        <img class="iconos-footer" src="../img/logoyoutube.png" alt="icono youtube">
+        <img class="iconos-footer" src="../img/logospotify.png" alt="icono spotify">
+       
+    </footer>
+</div>
+</body>
+</html>
