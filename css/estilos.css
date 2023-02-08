@@ -4,7 +4,7 @@
       padding:0;
       box-sizing:border-box;
 }
-/*.....................ESTILOS DEL INDEX......................*/
+/*.....................ESTILOS HTML DEL INDEX......................*/
 /*............................................................*/
 
 /*..........Fondo de index.........................*/
@@ -190,7 +190,7 @@
 
 
 
-/*..........ESTILOS RECITALES..........................*/
+/*..........ESTILOS HTML RECITALES..........................*/
 /*.......................................................*/
 /*...............estilos header........................*/
     .contenedor-padre-recitales{
@@ -209,7 +209,7 @@
                   } 
             /*Logo del menu*/
             .logochico{
-                  width:50% ;
+                  width:40% ;
                       }
                       /*estilo boton*/
                      
@@ -233,14 +233,17 @@
       }
      .footer-reci{
       display: flex;
+      padding-left: 0.6rem;
+      padding-right:0.6rem ;
       
 
      }
+      .footerfin{font-size:1rem ;}
       .entradas-h2{
             color: aliceblue;
+            padding-left: 0.3rem;
       
       }
-/*..........acomodar.....................................*/
 
 
 /*..........estilo de formulario.........................*/
@@ -292,20 +295,73 @@
                         }
                         
                         }
+/*..........ESTILOS HTML DISCOGRAFIA..........................*/
+/*.......................................................*/
+             .discografiaimg {
+                  background-color: rgba(0, 0, 0, 0.913); 
+                  padding-top:2rem ;                              }
+     /*................estilos main.................*/
 
-/*..........fondos de los html diferentes.................*/
-       
-            .historiaimg {
-                 background-color: black;
+            .titulosdiscografia{
+                  display: flex;
+                  flex-direction: column;
+                  color:rgba(202, 204, 136, 0.836);
+                  padding-top:2.5rem ;
                               }
-            .discografiaimg {
-                  background-image: url(../img/doscografiaimg.jpg);   
-                  background-size: cover;        
-                  margin:10px;
-                  padding: 20px;            
-                              }   
-            
+            .titulo-discografia{
+                  
+                   padding-bottom:2rem ;
+                   font-size: 3rem;
+                                    }
+            .contdiscos{
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 2rem;
+                  color:rgba(202, 204, 136, 0.836);
+            }
+            .disco-end-of-grey{
+                  width: 40%;
+            }
+   /*..........ESTILOS HTML HISTORIA..........................*/         
+            .historiaimg {
+                  background-color: black;
+                   }
+            /*Estilos main*/
+            .intengrantes{
+                  padding: 2.5rem 0.5rem;
+                  color:rgba(202, 204, 136, 0.836);
+            }
+            .contenedor{
+                  display: flex;
+                  flex-direction: column-reverse;
+                  align-items: center;
+                  padding: 2rem;
+                  gap: 2rem;
+                  color:rgba(202, 204, 136, 0.836); 
+            }
+            .contenedor-imagen{
+                  width: 80%;
+            }
+            @media screen and (min-width:1024px){
+                  .contenedor-imagen{
+                        width: 40%;
+                  }
+            }
+/*..........ESTILOS HTML VIDEOS..........................*/
             .videosimg {
-                  background-image: url(../img/videos.jpg);
+                  background-color: black;
                         }   
-/*..........fin de fondos de los 5 html*/          
+            /*ESTILOS MAIN*/            
+            .videoscontenedor{
+                  
+                  padding-top: 3rem;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  color:rgba(202, 204, 136, 0.836);
+            }
+            .contenedor-video{
+                  padding-top: 1rem;
+                 
+            }

@@ -5,33 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Videos</title>
+    <!--css bootstrap-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--mi css-->
     <link rel="stylesheet" href="../css/estilos.css">
     <!--letra en font-->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
 </head>
 <!-- alt + z es para que se reajuste el texto a la pantalla-->
 <body class="videosimg">
-     <header>
-        <!-- imagen del logo-->
-        <img class="logochico" src="../img/DecyferDown-h1-logo-2016.png" alt="logo de DecyferDown">
-            <!-- nav hace referencia a navegador y el ul li es para hacer una tabla una fila 3 columnas-->
-            <nav>
-                <ul>
-                    <li> <a href="../index.html">Inicio</a></li>
-                    <li><a href="discografia.html">Discografia</a></li>
-                    <li><a href="historia.html">Historia</a></li>
-                    <li><a href="recitales.html">Recitales</a></li>
-               </ul>
-            </nav>
+    <div class="header-index-mobile">
+        <nav class="navbar navbar-dark bg-dark fixed-top botones-recitales">
+           <div class="container-fluid">
+               <img class="logochico"  src="../img/DecyferDown-h1-logo-2016.png" alt="logo de DecyferDown">
+             
+               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+               <span class="navbar-toggler-icon"></span>
+             </button>
 
-     </header>
+             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+               <div class="offcanvas-header">
+                 <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Decyfer Down</h5>
+                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               </div>
+               <div class="offcanvas-body">
+                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                   <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="#">MENU</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="../index.html">Inicio</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="../pages/historia.html">Historia</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="../pages/videos.html">Videos</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="../pages/recitales.html">Recitales</a>
+                     </li>
+                   </ul>
+                 
+               </div>
+             </div>
+           </div>
+         </nav>
+            </div>
+
+           <!--header para destock-->
+          <div class="header-index">
+            <img class="logo" src="../img/DecyferDown-h1-logo-2016.png" alt="logo de DecyferDown">
+            <nav>
+               <ul class="menu-index">
+                   <li class="ani-boton"> <a href="../index.html">Inicio</a></li>
+                   <li class="ani-boton"><a href="../pages/historia.html">Historia</a></li>
+                   <li class="ani-boton"><a href="../pages/recitales.html">Recitales</a></li>
+                   <li class="ani-boton"><a href="../pages/discografia.html">Discografia</a></li>
+              </ul>
+            </nav>
+                  </div>
+       
 <main>
     <div class="videoscontenedor">
         
-<h1>Videos</h1>
-<h2>Recital Colon año 2022</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8LowmTVoilE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+        <h1 class="h1-videos">Videos</h1>
+        <h2 class="h2-recital">Recital Colon año 2022</h2>
+        <div class="contenedor-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8LowmTVoilE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    </div>
 
 </main>
 
@@ -44,6 +87,6 @@
     <img class="iconos-footer" src="../img/logospotify.png" alt="icono spotify">
    
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
