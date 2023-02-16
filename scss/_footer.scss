@@ -1,0 +1,24 @@
+footer{
+    background-color: rgb(8, 8, 8);
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    margin-top:3rem;
+    padding:1rem;
+    gap: 1rem;
+    
+    /*texto de footer*/
+    .footerfin{
+    color:rgba(202, 204, 136, 0.836);
+    font-size: 1.2rem;     
+                }
+    /*iconos del footer*/
+    .iconos-footer{
+    width:1.5rem ;
+                }
+                }
+    /*footer index*/
+    .footer-index{
+        grid-area:footerr;
+                    }
