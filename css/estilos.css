@@ -5,6 +5,26 @@
   padding: 0;
   box-sizing: border-box; }
 
+footer {
+  background-color: #080808;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 1rem;
+  gap: 1rem;
+  /*texto de footer*/
+  /*iconos del footer*/ }
+  footer .footerfin {
+    color: rgba(202, 204, 136, 0.836);
+    font-size: 1.2rem; }
+  footer .iconos-footer {
+    width: 1.5rem; }
+
+/*footer index*/
+.footer-index {
+  grid-area: footerr; }
+
 /*fondo del index*/
 .homepagina {
   margin-top: 6rem;
@@ -43,12 +63,13 @@
 .main-index {
   grid-area: main;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   margin: 20px;
   gap: 20px; }
   .main-index .contenedor-imagen-index {
     width: auto;
-    height: auto; }
+    height: auto;
+    align-items: center; }
   .main-index .parrafo-index {
     color: rgba(166, 167, 145, 0.836);
     font-family: 'Permanent Marker', cursive;
@@ -83,16 +104,11 @@
         .homepagina .header-index .menu-index .ani-boton:hover {
           transform: scale(1.1);
           filter: drop-shadow(8px 15px 10px); }
-        .homepagina .header-index .menu-index a:link {
+        .homepagina .header-index .menu-index li a {
           text-decoration: none; }
         .homepagina .header-index .menu-index a:visited {
           color: rgba(245, 229, 125, 0.148);
           text-decoration: none; }
-    .homepagina .contendor-padre .main-index {
-      display: flex;
-      flex-direction: row; }
-      .homepagina .contendor-padre .main-index .contenedor-imagen-index {
-        width: 30%; }
     .homepagina .contendor-padre .head-index-grid {
       grid-area: header;
       display: flex;
@@ -103,8 +119,12 @@
       grid-template-columns: 1px 1px;
       grid-template-areas: "header header" "h1 h1" "main main" "footerr footerr"; }
     .homepagina .main-index {
-      display: flex;
-      flex-direction: row; } }
+      flex-direction: row-reverse;
+      align-items: start; }
+      .homepagina .main-index .contenedor-imagen-index {
+        justify-self: start;
+        width: 50%;
+        height: 50%; } }
 
 footer {
   background-color: #080808;

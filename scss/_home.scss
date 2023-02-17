@@ -1,4 +1,4 @@
-
+@import"_footer";
 /*fondo del index*/
 
 .homepagina {
@@ -36,7 +36,8 @@
         .main-index{
             grid-area:main;
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column;
+            
             margin: 20px;
             gap: 20px;
           
@@ -44,6 +45,7 @@
                .contenedor-imagen-index{
                   width:auto;
                   height: auto;
+                  align-items: center;
                   
                   
                   
@@ -82,9 +84,9 @@
                   filter: drop-shadow(8px 15px 10px);
               }
             /*Quitar hipervinculo violeta*/
-              a:link{
+              li {a{
                   text-decoration: none;
-                  }
+                  }}
               a:visited {
                   color:rgba(245, 229, 125, 0.148);
                   text-decoration: none; }
@@ -95,17 +97,7 @@
          }
          
       .contendor-padre{
-         .main-index{
-            display: flex;
-            flex-direction:row;
-            .contenedor-imagen-index{
-               width:30%;
-               
-               
-               
-               
-                                   }
-         }
+         
       .head-index-grid{
             grid-area:header;
             display: flex;
@@ -127,9 +119,15 @@
    
    
    .main-index{
-   display: flex;
-   flex-direction:row;
-   
+   flex-direction: row-reverse;
+
+   align-items: start;
+   .contenedor-imagen-index{
+      justify-self: start;
+      width: 50%;
+      height:50% ;
+      
+   }
 }
 }
 
