@@ -1,5 +1,5 @@
 
-
+@import"extend/extend.scss";
 @import"var/logo-var";
 @import"mixin/botones-flex";
 .recitalesimg {
@@ -18,11 +18,7 @@
          display: none;
              }
              .main-reci{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                justify-items: center;
+                @extend %flexcolun;
                 .h1-recital{padding-left: 2.5rem;
                             padding-right: 2.5rem;}
                             .entradas-h2{

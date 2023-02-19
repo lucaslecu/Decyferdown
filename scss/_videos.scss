@@ -1,6 +1,6 @@
 @import"mixin/botones-flex";
 @import"var/logo-var";
-
+@import"extend/extend.scss";
 .videosimg {
     background-image: url(../img/videos-fondo.webp);
    
@@ -16,10 +16,7 @@
     }
     .main-videos{
         .videos-contenedor{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @extend %flexcolun;
             .h1-videos{
                 color: azure;
             }

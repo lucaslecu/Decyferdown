@@ -1,5 +1,6 @@
 @import"mixin/botones-flex";
 @import"var/logo-var";
+@import"extend/extend.scss";
 /*...........html discografia...................*/
 .discografiaimg {
     background-color: rgba(0, 0, 0, 0.913); 
@@ -14,10 +15,7 @@
                     }
             main{
                 .titulosdiscografia{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
+                    @extend %flexcolun;
                     grid-area:h12-dis;
                     .titulo-discografia{
                         color: azure;
@@ -29,10 +27,8 @@
                                     }                 
                 } 
                 .contdiscos{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
+                    @extend %flexcolun;
+
                     grid-area:discos-dis;
                         .disco-end-of-grey{
                             width: 70%;
