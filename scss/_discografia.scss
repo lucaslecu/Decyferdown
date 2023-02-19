@@ -1,0 +1,102 @@
+@import"mixin/botones-flex";
+@import"var/logo-var";
+/*...........html discografia...................*/
+.discografiaimg {
+    background-color: rgba(0, 0, 0, 0.913); 
+    
+        
+
+   .contenedor-padre-discografia{
+        margin-top: 5rem;
+            header{
+                .header-discografia{grid-area:header-dis; display: none;
+                }
+                    }
+            main{
+                .titulosdiscografia{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    grid-area:h12-dis;
+                    .titulo-discografia{
+                        color: azure;
+                        font-size:2.5rem ;
+                        padding-bottom:2rem ;
+                                     }
+                    .discos{color: azure;
+                            padding-bottom: 1rem;
+                                    }                 
+                } 
+                .contdiscos{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    grid-area:discos-dis;
+                        .disco-end-of-grey{
+                            width: 70%;
+                            border-radius: 2rem;
+                            box-shadow: 10px 10px 20px;
+                            border-color: aliceblue;
+                            padding-bottom:0.5rem ;
+                            margin-bottom: 1.5rem;
+                              }  
+                         nav{
+                            ol {color: azure;
+                                font-size:1.5rem ;
+                                li{color: azure;
+                                font-size: 1rem;}
+                               }  
+                            }   
+                        
+                 }
+            }
+          .footer-discografia {grid-area:footer-disco;}
+
+    }
+}
+            @media screen and (min-width:1024px){
+                .discografiaimg {
+                    .contenedor-padre-discografia{
+                        display: grid;
+                        grid-template-columns:1fr;
+                        grid-template-rows:1fr;
+                        grid-template-areas:
+                        "header-dis"  /*header-discografia*/
+                        "h12-dis"        /*titulosdiscografia*/
+                        "discos-dis"          /*contdiscos*/
+                        "footer-disco" /*footer-discografia*/
+                        ;
+
+                        margin-top: 0.5rem;
+                        header{
+                            .header-index-mobile{display: none;}
+                            .header-discografia{@include header-nav;
+                                 .logochico{width:$logodestock;
+                                            padding-left: 3rem; }
+                                 nav{ .menu-index{@include flex-botones;}
+
+                                        }           
+                                }
+                        }
+                        main {
+                            .contdiscos{
+                                .disco-end-of-grey{
+                                    width: 50%;
+                                }
+                            }
+                        }
+                    }
+
+
+
+
+
+                }
+
+
+
+
+
+}

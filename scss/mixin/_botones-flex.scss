@@ -1,0 +1,19 @@
+@mixin flex-botones{
+    display: flex;
+               font-size: 1.5rem;
+               align-items: center;
+               justify-items: center;
+               margin-right: 5rem;
+               font-family: 'Permanent Marker';
+               list-style: none;
+               gap: 1rem;
+               
+            
+                    }
+ //flex para img y botones                   
+@mixin header-nav{display: block;
+                display: flex;
+                justify-content:space-between;
+                align-items:center;
+                margin-bottom: 2rem;
+                }

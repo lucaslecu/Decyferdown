@@ -1,136 +1,108 @@
-@import"_footer";
-/*fondo del index*/
+@import"mixin/botones-flex";
+@import"var/logo-var";
+/*...............html index.................*/
 
-.homepagina {
+   .homepagina {
     margin-top: 6rem;
     background-image:url("../img/DD-Top-Banner-2016.jpg");
     height:100vh;
-            }
+                }
     
-    .logochico{width:40% ;}
+    .logochico{width:$logomobile ;}
     .header-index{display: none;
                 }
             /*titulo del index*/
     .section-index{
-      grid-area: h1;
-        .titulo-index{
-            color:rgba(166, 167, 145, 0.836); 
-            text-decoration:underline;
-            font-size:1.5rem;
-            text-align: center;
-            margin-bottom:1.5rem;
-/*..........Animacion h1 cuando arranca pagina*/
-            animation-name:animacionh1;
-            animation-iteration-count: initial; /*cuantas veces se repetirá*/
-            animation-duration:4s;    /*la duración que tendrá*/ 
-               } 
-            @keyframes animacionh1{   
-               0%    {    
-               transform: scale(0.8);
-                    }
-               100%{    
-               transform: scale(1);
-                    }              }
-        }
+                  grid-area: h1;
+                  .titulo-index{
+                  color:rgba(166, 167, 145, 0.836); 
+                  text-decoration:underline;
+                  font-size:1.5rem;
+                  text-align: center;
+                  margin-bottom:1.5rem;
+            /*..........Animacion h1 cuando arranca pagina*/
+                  animation-name:animacionh1;
+                  animation-iteration-count: initial; /*cuantas veces se repetirá*/
+                  animation-duration:4s;    /*la duración que tendrá*/ 
+                                 } 
+                  @keyframes animacionh1{   
+                  0%    {    
+                  transform: scale(0.8);
+                        }
+                  100%{    
+                  transform: scale(1);
+                    }                  }
+                  }
         /*main index*/
         .main-index{
-            grid-area:main;
             display: flex;
             flex-direction: column;
-            
             margin: 20px;
             gap: 20px;
-          
-                  
                .contenedor-imagen-index{
                   width:auto;
                   height: auto;
                   align-items: center;
-                  
-                  
-                  
                                       }
-               .parrafo-index{
+               .parrafo-index          {
                   color:rgba(166, 167, 145, 0.836);
                   font-family: 'Permanent Marker', cursive;
                   margin-left: 10px;
-                 
-                  
-                       }
+                                       }
                     }
+
      /*..........Media queries en desktop*.................*/   
-     @media screen and (min-width:1024px){
-     .homepagina{margin-top: 0.5rem;
-      .header-index-mobile{display: none;}
-      .logo{width:50% ;} 
-         .header-index{display: block;
-            grid-area: header;
-            display: flex;
-            justify-content:space-between;
-            align-items:center;
+        @media screen and (min-width:1024px){
+   
+            .homepagina{margin-top: 0.5rem;
+                  .header-index-mobile{display: none;}
+                  .logo{width:$logodestock ;
+                        padding-left: 3rem;} 
+                  .header-index{
+                                 @include header-nav;
+                                 grid-area: header;
+                                 
             
-            .menu-index{
-               grid-area: main;
-               display: flex;
-               font-size: 1.5rem;
-               align-items: center;
-               justify-items: center;
-               margin-right: 5rem;
-               font-family: 'Permanent Marker';
-            list-style: none; /* Sacarle los puntitos al menu list-style none*/
-            gap: 1rem;
-               .ani-boton:hover{
-                  transform: scale(1.1);
-                  filter: drop-shadow(8px 15px 10px);
-              }
-            /*Quitar hipervinculo violeta*/
-              li {a{
-                  text-decoration: none;
-                  }}
-              a:visited {
-                  color:rgba(245, 229, 125, 0.148);
-                  text-decoration: none; }
-                  
-         }
+                     .menu-index{
+                        @include flex-botones; 
+                        grid-area: main;
+                                 }
             
 
-         }
+                  }
          
-      .contendor-padre{
+               .contendor-padre{
          
-      .head-index-grid{
-            grid-area:header;
-            display: flex;
-            flex-direction:column;
-            align-items: center;
-         display: grid;
-            grid-template-rows:1px 1px; 
-            grid-template-columns:1px 1px;
-            grid-template-areas: 
-            "header header"
-            "h1 h1"
-            "main main"
-            "footerr footerr";
+                  .head-index-grid{
+                           grid-area:header;
+                           display: flex;
+                           flex-direction:column;
+                           align-items: center;
+                           display: grid;
+                           grid-template-rows:1px 1px; 
+                           grid-template-columns:1px 1px;
+                           grid-template-areas: 
+                           "header header"
+                           "h1 h1"
+                           "main main"
+                           "footerr footerr";
             
-      }
+                                    }  
       
-   }
+                                                      }  
    
-   
-   
-   .main-index{
-   flex-direction: row-reverse;
-
-   align-items: start;
-   .contenedor-imagen-index{
-      justify-self: start;
-      width: 50%;
-      height:50% ;
-      
-   }
-}
-}
+                  .main-index{
+                     grid-area:main;   
+                     flex-direction: row-reverse;
+                     align-items: start;
+                           .contenedor-imagen-index{
+                                 justify-self: start;
+                                 width: 50%;
+                                 height:50% ;
+                                                   }
+                     }
+               }
 
 
 
-   }
+         }

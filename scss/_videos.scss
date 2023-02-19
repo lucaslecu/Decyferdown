@@ -1,0 +1,85 @@
+@import"mixin/botones-flex";
+@import"var/logo-var";
+
+.videosimg {
+    background-image: url(../img/videos-fondo.webp);
+   
+    background-size: cover;
+                    
+    
+    margin-top: 5rem;
+    header{
+        .header-videos{
+            display: none;
+                     }
+
+    }
+    .main-videos{
+        .videos-contenedor{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .h1-videos{
+                color: azure;
+            }
+            .h2-recital{
+                color: azure;
+                font-size: 1.3rem;
+
+            }
+            .contenedor-video{
+                padding: 1rem;
+            }
+        }
+    }
+          } 
+          @media screen and (min-width:1024px){
+            .videosimg{margin-top: 0.5rem;
+                        display: grid;
+                        grid-template-columns: auto;
+                        grid-template-rows: auto;
+                        grid-template-areas:"header-v"
+                                            "main-v"
+                                            "footer-v" ;
+                header{
+                    .header-videos{@include header-nav;
+                                    grid-area: header-v;
+                                    .logochico{width:$logodestock;
+                                        padding-left: 3rem;
+                                        box-shadow: darkgoldenrod 10px 10px 10px;
+                                        border-radius: 10px;
+                                    }
+                        nav{
+                            .menu-index{
+                                @include flex-botones;
+                            }
+                        }
+                    }
+                }
+            
+                .main-videos{
+                    grid-area: main-v;
+                    
+                    
+                    
+                   
+                    
+                    .videos-contenedor{
+                        justify-content: center;
+                        align-items: center;
+
+                    }
+
+
+                }
+            }
+
+            .footer-videos{
+                grid-area: footer-v;
+                margin-top: 10rem;
+            }
+            
+
+
+          }

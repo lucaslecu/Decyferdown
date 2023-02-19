@@ -1,0 +1,67 @@
+
+
+@import"var/logo-var";
+@import"mixin/botones-flex";
+.recitalesimg {
+    
+    background-image: url(../img/recitales.jpg);
+    background-size: cover;
+    height: 100vh;
+                } 
+.contenedor-padre-recitales{
+    height:100vh;
+    margin-top:6rem ;
+                    }
+    .logochico{
+        width:$logomobile;}
+        .header-reci{
+         display: none;
+             }
+             .main-reci{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                justify-items: center;
+                .h1-recital{padding-left: 2.5rem;
+                            padding-right: 2.5rem;}
+                            .entradas-h2{
+                                color: aliceblue;
+                                padding-left: 0.3rem;
+                          
+                          }            
+             }
+             @media screen and (min-width:1024px){
+                /*..........Estructura html recitales con grid desktop*/
+                .botones-recitales{
+                    display: none;}
+                    .contenedor-padre-recitales{
+                        margin-top: 0.5rem;
+                        display: grid;
+                        grid-template-rows:auto; 
+                        grid-template-columns:auto;
+                        grid-template-areas: 
+                        "header-re header-re"
+                        "main-re main-re"
+                        "section-re section-re"
+                        "footerr-re footerr-re";
+                    .header-reci{
+                        @include header-nav;
+                        grid-area: header-re;
+                        .menu-recital{
+                            @include flex-botones;
+                                    }
+                        .logochico{width:$logodestock;
+                        padding-left: 3rem;}
+                        }  
+                    .main-reci{grid-area: main-re;}
+                    .section-reci{grid-area: section-re;}
+                    .footer-reci{grid-area: footerr-re;}
+                    }
+            
+            
+            
+            
+            
+            
+            }

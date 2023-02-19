@@ -1,0 +1,80 @@
+@import"mixin/botones-flex";
+@import"var/logo-var";
+/*...........html Historia...................*/
+.historiaimg {
+    background-color: black;
+    margin-top: 6rem;
+    header{
+        .header-historia-mobile{
+            .historianav{
+                .logochico{width:$logomobile;
+                            }
+                        }
+                                }
+        .header-historia{display: none;}
+    }     
+    .main-historia{display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        .intengrantes{margin-bottom: 2rem;
+                      color: azure;
+            
+                     }
+        .contenedor{display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-items: center;
+            .contenedor-imagen-historia{width: 80%;}
+            .parrafo-historia{margin: 2rem 1.5rem ;
+                              color: azure;}
+                    }
+    }
+}
+@media screen and (min-width:1024px){
+    .historiaimg {
+        margin-top: 0.5rem;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns:100%;
+        grid-template-areas:
+        "header-his header-his"
+        "main-his main-his"
+        "footer-his footer-his" ;
+        header {
+            .header-historia{@include header-nav;
+                grid-area: header-his;
+               
+                .logochico{width:$logodestock;
+                          padding-left:3rem;  }
+                nav{
+                    .menu-index{
+                        @include flex-botones;}
+                }
+            }
+
+        }
+        .main-historia{grid-area:main-his;
+            
+            
+            .contenedor{flex-direction: row;
+            align-items:center;
+            justify-content: center;
+            margin: 2rem;
+            .contenedor-imagen-historia{width:35%
+                ;height:100%;
+                                        }
+            .parrafo-historia{
+                width:40% ;
+                height:100% ;
+            }
+            
+            }
+
+
+        }
+        .footer-historia{
+            grid-area:footer-his;
+        }
+    }
+}
