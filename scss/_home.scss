@@ -6,21 +6,23 @@
     margin-top: 6rem;
     background-image:url("../img/DD-Top-Banner-2016.jpg");
     height:100vh;
-                }
-    
-    .logochico{width:$logomobile ;}
-    .header-index{display: none;
-                }
-            /*titulo del index*/
-    .section-index{
-                  grid-area: h1;
+      .contenedor-padre{
+            .head-index-grid{
+               .header-index-mobile{
+                              .container-fluid{
+                                  .logochico{width:$logomobile ;}  
+                                          }
+                                    }      
+               .header-index{display: none;}
+                               }
+            .section-index{
                   .titulo-index{
                   color:rgba(166, 167, 145, 0.836); 
                   text-decoration:underline;
                   font-size:1.5rem;
                   text-align: center;
                   margin-bottom:1.5rem;
-            /*..........Animacion h1 cuando arranca pagina*/
+                 /*..........Animacion h1 cuando arranca pagina*/
                   animation-name:animacionh1;
                   animation-iteration-count: initial; /*cuantas veces se repetirá*/
                   animation-duration:4s;    /*la duración que tendrá*/ 
@@ -32,69 +34,106 @@
                   100%{    
                   transform: scale(1);
                     }                  }
-                  }
-        /*main index*/
-        .main-index{
-            display: flex;
-            flex-direction: column;
-            
-            
-            margin: 20px;
-            gap: 20px;
-               .contenedor-imagen-index{
+                  }             
+            .main-index{
+                  display: flex;
+                  flex-direction: column;
+                  margin: 20px;
+                  gap: 20px;
+                .contenedor-imagen-index{
                   width:auto;
                   height: auto;
                   align-items: center;
                                       }
-               .parrafo-index          {
+                .parrafo-index          {
                   color:rgba(166, 167, 145, 0.836);
                   font-family: 'Permanent Marker', cursive;
                   margin-left: 10px;
                                        }
-                    }
+                    }                
+                    
+                                                                  }
+   }
 
-     /*..........Media queries en desktop*.................*/   
+/*..........Media queries en tablet*................. */
+@media screen and (min-width:768px){
+      .homepagina{margin-top: 3rem;
+            .contenedor-padre{
+                  .head-index-grid{
+                     .header-index-mobile{display: none;}
+                     .header-index{@include header-tablet;
+                                  .logo{width:$logotablet ;}
+                                  nav{ 
+                                    .menu-index{
+                                          @include menu-tablet;
+                                                }
+                                          }   
+                                     }   
+                                    }
+                   .section-index{
+                        .titulo-index{
+                                    font-size: 3rem;
+                        }
+
+                                    }                 
+                   .main-index{flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                               .contenedor-imagen-index{
+                                    display: flex;
+                                    width: 80%;
+                                    
+                               }
+
+                              }           
+                              }
+            
+
+            
+            
+      }
+
+}                                                           
+
+     /*..........Media queries en desktop*.................  */
         @media screen and (min-width:1024px){
    
-            .homepagina{margin-top: 0.5rem;
-                  .header-index-mobile{display: none;}
-                  .logo{width:$logodestock ;
-                        padding-left: 3rem;} 
-                  .header-index{
-                                 @include header-nav;
-                                 grid-area: header;
-                                 
-            
-                     .menu-index{
-                        @include flex-botones; 
-                        grid-area: main;
-                                 }
-            
+            .homepagina{margin-top:2rem ;
+               .contenedor-padre{
+                              display: grid;
+                              grid-template-rows:auto ; 
+                              grid-template-columns:auto;
+                              grid-template-areas: 
+                              "header-home" 
+                              "h1-home"     
+                              "main-home"      
+                              "footer-home"       ;
+                             
+                  .header-homee{
+                        grid-area:header-home;
+                        display: flex;
+                        flex-direction:column;
+                        align-items: center;
+                         
+                        .header-index{
+                                       display: flex;
+                                       flex-direction: row;
+                                       justify-content: space-between;
+                          .logo{width:$logodestock ;
+                                padding-left: 2rem;}
+                          nav{.menu-index{
+                                     @include flex-botones; 
+                                          
+                                                      }
 
-                  }
-         
-               .contendor-padre{
-         
-                  .head-index-grid{
-                           grid-area:header;
-                           display: flex;
-                           flex-direction:column;
-                           align-items: center;
-                           display: grid;
-                           grid-template-rows:1px 1px; 
-                           grid-template-columns:1px 1px;
-                           grid-template-areas: 
-                           "header header"
-                           "h1 h1"
-                           "main main"
-                           "footerr footerr";
-            
-                                    }  
-      
-                                                      }  
-   
-                  .main-index{
-                     grid-area:main;   
+                                                            }                   
+                                        }  
+                                    
+              
+              
+                              }
+                  .main-homee{
+                     grid-area:main-home;   
                      flex-direction: row-reverse;
                      align-items: start;
                            .contenedor-imagen-index{
@@ -102,9 +141,22 @@
                                  width: 50%;
                                  height:50% ;
                                                    }
-                     }
-               }
+                            .parrafo-index{margin-bottom: 5rem;}                          }
+                  .section-index { grid-area:h1-home;
+                        
+                        .titulo-index{ font-size: 1.5rem;
+                                            }
+                  }                                        
+                    /*footer index*/
+            .footer-homee{
+                  grid-area:footer-home;
+                  
+                        }                               } 
+                                          
+                                          }  
+         
+             } 
 
 
 
-         }
+         

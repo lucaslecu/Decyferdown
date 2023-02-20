@@ -10,7 +10,7 @@
    .contenedor-padre-discografia{
         margin-top: 5rem;
             header{
-                .header-discografia{grid-area:header-dis; display: none;
+                .header-discografia{grid-area:header-dis; display:none;
                 }
                     }
             main{
@@ -52,6 +52,36 @@
 
     }
 }
+     @media screen and (min-width:768px){
+        .discografiaimg{
+        .contenedor-padre-discografia{
+            margin-top: 3rem;
+                header{
+                    .header-index-mobile{display: none;}
+                    .header-discografia {@include header-tablet;
+                    .logochico{width:$logotablet }
+                    nav{
+                        .menu-index{
+                            @include menu-tablet;
+                        }
+                    }
+                    }
+                        
+                
+                
+                
+                
+                }
+                    
+                    
+                    
+                    
+        } 
+       }             
+                    
+    }
+                
+
             @media screen and (min-width:1024px){
                 .discografiaimg {
                     .contenedor-padre-discografia{
@@ -67,7 +97,7 @@
 
                         margin-top: 0.5rem;
                         header{
-                            .header-index-mobile{display: none;}
+                            .header-index-mobile{}
                             .header-discografia{@include header-nav;
                                  .logochico{width:$logodestock;
                                             padding-left: 3rem; }

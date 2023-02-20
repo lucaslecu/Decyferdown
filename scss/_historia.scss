@@ -26,6 +26,28 @@
                     }
     }
 }
+
+@media screen and (min-width:768px){
+
+    .historiaimg {
+    
+        margin-top: 3rem;
+        header{
+            .header-historia-mobile{display: none;}
+            .header-historia{@include header-tablet;                   
+                .logochico{width: $logotablet; }
+                .menu-index{@include menu-tablet;}            
+            }
+                                    
+                        }
+            
+    }     
+
+}
+
+
+
+
 @media screen and (min-width:1024px){
     .historiaimg {
         margin-top: 0.5rem;

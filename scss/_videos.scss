@@ -9,6 +9,13 @@
     
     margin-top: 5rem;
     header{
+        .header-index-mobile{
+            nav{
+                .container-fluid{
+                    .logochico{width:$logomobile ;}
+                }
+            }
+        }
         .header-videos{
             display: none;
                      }
@@ -31,6 +38,27 @@
         }
     }
           } 
+
+          @media screen and (min-width:768px){
+
+            .videosimg {
+                         margin-top: 3rem;
+                header{
+                    .header-index-mobile{display: none;}
+                    .header-videos{
+                                    @include header-tablet;
+                                    .logochico{width:$logotablet ;}
+                                    .menu-index{@include menu-tablet}
+                                 }
+            
+                }
+
+
+          }
+
+        }
+
+
           @media screen and (min-width:1024px){
             .videosimg{margin-top: 0.5rem;
                         display: grid;

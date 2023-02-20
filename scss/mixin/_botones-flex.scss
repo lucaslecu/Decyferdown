@@ -11,9 +11,28 @@
             
                     }
  //flex para img y botones                   
-@mixin header-nav{display: block;
-                display: flex;
+@mixin header-nav{display: flex;
+                flex-direction: row;
                 justify-content:space-between;
                 align-items:center;
                 margin-bottom: 2rem;
                 }
+
+@mixin menu-tablet {display: flex;
+                    flex-direction:row;
+                    gap: 1rem;
+                    font-size: 2rem;
+                    list-style: none;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 2rem;
+                     margin-bottom: 1rem }
+                     
+@mixin header-tablet {display: block;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                      text-align: center;
+                      font-family: 'Permanent Marker';
+                      font: size 0.5em;
+                    }
