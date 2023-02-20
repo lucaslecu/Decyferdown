@@ -10,9 +10,17 @@
    .contenedor-padre-discografia{
         margin-top: 5rem;
             header{
+                .header-index-mobile{
+                    nav{
+                        .container-fluid{
+                            .logochico{
+                                width:$logomobile ;
+                                                }
+                                            }
+                                        }}
                 .header-discografia{grid-area:header-dis; display:none;
-                }
-                    }
+                            }
+                     }
             main{
                 .titulosdiscografia{
                     @extend %flexcolun;

@@ -416,6 +416,8 @@ footer {
   background-color: rgba(0, 0, 0, 0.913); }
   .discografiaimg .contenedor-padre-discografia {
     margin-top: 5rem; }
+    .discografiaimg .contenedor-padre-discografia header .header-index-mobile nav .container-fluid .logochico {
+      width: 40%; }
     .discografiaimg .contenedor-padre-discografia header .header-discografia {
       grid-area: header-dis;
       display: none; }
