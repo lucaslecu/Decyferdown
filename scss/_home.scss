@@ -3,7 +3,7 @@
 /*...............html index.................*/
 
    .homepagina {
-    margin-top: 6rem;
+    margin-top: 5rem;
     background-image:url("../img/DD-Top-Banner-2016.jpg");
     height:100vh;
       .contenedor-padre{
@@ -98,7 +98,7 @@
      /*..........Media queries en desktop*.................  */
         @media screen and (min-width:1024px){
    
-            .homepagina{margin-top:2rem ;
+            .homepagina{margin-top: 0.5rem;
                .contenedor-padre{
                               display: grid;
                               grid-template-rows:auto ; 

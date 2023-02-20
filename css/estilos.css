@@ -7,7 +7,7 @@
 
 /*...............html index.................*/
 .homepagina {
-  margin-top: 6rem;
+  margin-top: 5rem;
   background-image: url("../img/DD-Top-Banner-2016.jpg");
   height: 100vh; }
   .homepagina .contenedor-padre .head-index-grid .header-index-mobile .container-fluid .logochico {
@@ -85,7 +85,7 @@
 /*..........Media queries en desktop*.................  */
 @media screen and (min-width: 1024px) {
   .homepagina {
-    margin-top: 2rem; }
+    margin-top: 0.5rem; }
     .homepagina .contenedor-padre {
       display: grid;
       grid-template-rows: auto;
@@ -154,9 +154,9 @@ footer {
 
 /*...........html Historia...................*/
 .historiaimg {
-  background-color: black;
-  margin-top: 6rem; }
-  .historiaimg header .header-historia-mobile .historianav .logochico {
+  background-color: rgba(10, 9, 9, 0.975);
+  margin-top: 5rem; }
+  .historiaimg header .header-historia-mobile nav .historianav .logochico {
     width: 40%; }
   .historiaimg header .header-historia {
     display: none; }
@@ -246,10 +246,10 @@ footer {
 .recitalesimg {
   background-image: url(../img/recitales.jpg);
   background-size: cover;
-  height: 100vh; }
+  height: 100vh;
+  margin-top: 5rem; }
   .recitalesimg .contenedor-padre-recitales {
-    height: 100vh;
-    margin-top: 6rem; }
+    height: 100vh; }
     .recitalesimg .contenedor-padre-recitales .header-recitales .header-reci-mobile nav .container-fluid .logochico {
       width: 40%; }
     .recitalesimg .contenedor-padre-recitales .header-recitales .header-reci {
@@ -257,12 +257,25 @@ footer {
     .recitalesimg .contenedor-padre-recitales .main-reci .h1-recital {
       padding-left: 2.5rem;
       padding-right: 2.5rem; }
+    .recitalesimg .contenedor-padre-recitales .main-reci .tabla-reci {
+      background-color: rgba(220, 128, 232, 0.301);
+      padding: 0.5rem 0.7rem;
+      margin: 0.5rem;
+      border-radius: 2rem;
+      box-shadow: 10px 10px 20px;
+      border-color: aliceblue; }
+      .recitalesimg .contenedor-padre-recitales .main-reci .tabla-reci table thead tr {
+        color: rgba(1, 0, 8, 0.677);
+        font-size: 1.5rem; }
+      .recitalesimg .contenedor-padre-recitales .main-reci .tabla-reci table tbody tr {
+        color: rgba(1, 0, 8, 0.677);
+        font-size: 1.2rem; }
     .recitalesimg .contenedor-padre-recitales .main-reci .entradas-h2 {
       color: aliceblue;
       padding-left: 0.3rem; }
 
 @media screen and (min-width: 768px) {
-  .recitalesimg .contenedor-padre-recitales {
+  .recitalesimg {
     margin-top: 3rem; }
     .recitalesimg .contenedor-padre-recitales .header-recitales .header-reci-mobile {
       display: none; }
@@ -285,40 +298,49 @@ footer {
         margin-top: 2rem;
         margin-bottom: 1rem; }
       .recitalesimg .contenedor-padre-recitales .header-recitales .header-reci .logochico {
-        width: 50%; } }
+        width: 50%; }
+    .recitalesimg .contenedor-padre-recitales .main-reci .entradas-h2 {
+      color: black;
+      text-shadow: 2px 2px 2px;
+      margin-top: 2rem; } }
 
 @media screen and (min-width: 1024px) {
   /*..........Estructura html recitales con grid desktop*/
-  .recitalesimg .contenedor-padre-recitales {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-    grid-template-areas: "header-re header-re" "main-re main-re" "section-re section-re" "footerr-re footerr-re"; }
-    .recitalesimg .contenedor-padre-recitales .header-recitales .header-reci {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 2rem;
-      grid-area: header-re; }
-      .recitalesimg .contenedor-padre-recitales .header-recitales .header-reci nav .menu-recital {
+  .recitalesimg {
+    margin-top: 0.5rem; }
+    .recitalesimg .contenedor-padre-recitales {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: auto;
+      grid-template-areas: "header-re header-re" "main-re main-re" "section-re section-re" "footerr-re footerr-re"; }
+      .recitalesimg .contenedor-padre-recitales .header-recitales .header-reci {
         display: flex;
-        font-size: 1.5rem;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        justify-items: center;
-        margin-right: 5rem;
-        font-family: 'Permanent Marker';
-        list-style: none;
-        gap: 1rem; }
-      .recitalesimg .contenedor-padre-recitales .header-recitales .header-reci .logochico {
-        width: 30%;
-        padding-left: 3rem; }
-    .recitalesimg .contenedor-padre-recitales .main-reci {
-      grid-area: main-re; }
-    .recitalesimg .contenedor-padre-recitales .section-reci {
-      grid-area: section-re; }
-    .recitalesimg .contenedor-padre-recitales .footer-reci {
-      grid-area: footerr-re; } }
+        margin-bottom: 2rem;
+        grid-area: header-re; }
+        .recitalesimg .contenedor-padre-recitales .header-recitales .header-reci nav .menu-recital {
+          display: flex;
+          font-size: 1.5rem;
+          align-items: center;
+          justify-items: center;
+          margin-right: 5rem;
+          font-family: 'Permanent Marker';
+          list-style: none;
+          gap: 1rem; }
+        .recitalesimg .contenedor-padre-recitales .header-recitales .header-reci .logochico {
+          width: 30%;
+          padding-left: 3rem; }
+      .recitalesimg .contenedor-padre-recitales .main-reci {
+        grid-area: main-re; }
+        .recitalesimg .contenedor-padre-recitales .main-reci .entradas-h2 {
+          color: rgba(250, 250, 250, 0.885);
+          text-shadow: 2px 2px 2px; }
+      .recitalesimg .contenedor-padre-recitales .section-reci {
+        grid-area: section-re; }
+      .recitalesimg .contenedor-padre-recitales .footer-reci {
+        grid-area: footerr-re; } }
 
 .historiaimg .main-historia, .historiaimg .main-historia .contenedor, .recitalesimg .contenedor-padre-recitales .main-reci, .videosimg .main-videos .videos-contenedor, .discografiaimg .contenedor-padre-discografia main .titulosdiscografia, .discografiaimg .contenedor-padre-discografia main .contdiscos {
   display: flex;
@@ -413,43 +435,42 @@ footer {
 
 /*...........html discografia...................*/
 .discografiaimg {
-  background-color: rgba(0, 0, 0, 0.913); }
-  .discografiaimg .contenedor-padre-discografia {
-    margin-top: 5rem; }
-    .discografiaimg .contenedor-padre-discografia header .header-index-mobile nav .container-fluid .logochico {
-      width: 40%; }
-    .discografiaimg .contenedor-padre-discografia header .header-discografia {
-      grid-area: header-dis;
-      display: none; }
-    .discografiaimg .contenedor-padre-discografia main .titulosdiscografia {
-      grid-area: h12-dis; }
-      .discografiaimg .contenedor-padre-discografia main .titulosdiscografia .titulo-discografia {
+  background-color: rgba(0, 0, 0, 0.913);
+  margin-top: 5rem; }
+  .discografiaimg .contenedor-padre-discografia header .header-index-mobile nav .container-fluid .logochico {
+    width: 40%; }
+  .discografiaimg .contenedor-padre-discografia header .header-discografia {
+    grid-area: header-dis;
+    display: none; }
+  .discografiaimg .contenedor-padre-discografia main .titulosdiscografia {
+    grid-area: h12-dis; }
+    .discografiaimg .contenedor-padre-discografia main .titulosdiscografia .titulo-discografia {
+      color: azure;
+      font-size: 2.5rem;
+      padding-bottom: 2rem; }
+    .discografiaimg .contenedor-padre-discografia main .titulosdiscografia .discos {
+      color: azure;
+      padding-bottom: 1rem; }
+  .discografiaimg .contenedor-padre-discografia main .contdiscos {
+    grid-area: discos-dis; }
+    .discografiaimg .contenedor-padre-discografia main .contdiscos .disco-end-of-grey {
+      width: 70%;
+      border-radius: 2rem;
+      box-shadow: 10px 10px 20px;
+      border-color: aliceblue;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem; }
+    .discografiaimg .contenedor-padre-discografia main .contdiscos nav ol {
+      color: azure;
+      font-size: 1.5rem; }
+      .discografiaimg .contenedor-padre-discografia main .contdiscos nav ol li {
         color: azure;
-        font-size: 2.5rem;
-        padding-bottom: 2rem; }
-      .discografiaimg .contenedor-padre-discografia main .titulosdiscografia .discos {
-        color: azure;
-        padding-bottom: 1rem; }
-    .discografiaimg .contenedor-padre-discografia main .contdiscos {
-      grid-area: discos-dis; }
-      .discografiaimg .contenedor-padre-discografia main .contdiscos .disco-end-of-grey {
-        width: 70%;
-        border-radius: 2rem;
-        box-shadow: 10px 10px 20px;
-        border-color: aliceblue;
-        padding-bottom: 0.5rem;
-        margin-bottom: 1.5rem; }
-      .discografiaimg .contenedor-padre-discografia main .contdiscos nav ol {
-        color: azure;
-        font-size: 1.5rem; }
-        .discografiaimg .contenedor-padre-discografia main .contdiscos nav ol li {
-          color: azure;
-          font-size: 1rem; }
-    .discografiaimg .contenedor-padre-discografia .footer-discografia {
-      grid-area: footer-disco; }
+        font-size: 1rem; }
+  .discografiaimg .contenedor-padre-discografia .footer-discografia {
+    grid-area: footer-disco; }
 
 @media screen and (min-width: 768px) {
-  .discografiaimg .contenedor-padre-discografia {
+  .discografiaimg {
     margin-top: 3rem; }
     .discografiaimg .contenedor-padre-discografia header .header-index-mobile {
       display: none; }
@@ -475,32 +496,33 @@ footer {
         margin-bottom: 1rem; } }
 
 @media screen and (min-width: 1024px) {
-  .discografiaimg .contenedor-padre-discografia {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "header-dis" "h12-dis" "discos-dis" "footer-disco";
+  .discografiaimg {
     margin-top: 0.5rem; }
-    .discografiaimg .contenedor-padre-discografia header .header-discografia {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 2rem; }
-      .discografiaimg .contenedor-padre-discografia header .header-discografia .logochico {
-        width: 30%;
-        padding-left: 3rem; }
-      .discografiaimg .contenedor-padre-discografia header .header-discografia nav .menu-index {
+    .discografiaimg .contenedor-padre-discografia {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "header-dis" "h12-dis" "discos-dis" "footer-disco"; }
+      .discografiaimg .contenedor-padre-discografia header .header-discografia {
         display: flex;
-        font-size: 1.5rem;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        justify-items: center;
-        margin-right: 5rem;
-        font-family: 'Permanent Marker';
-        list-style: none;
-        gap: 1rem; }
-    .discografiaimg .contenedor-padre-discografia main .contdiscos .disco-end-of-grey {
-      width: 50%; } }
+        margin-bottom: 2rem; }
+        .discografiaimg .contenedor-padre-discografia header .header-discografia .logochico {
+          width: 30%;
+          padding-left: 3rem; }
+        .discografiaimg .contenedor-padre-discografia header .header-discografia nav .menu-index {
+          display: flex;
+          font-size: 1.5rem;
+          align-items: center;
+          justify-items: center;
+          margin-right: 5rem;
+          font-family: 'Permanent Marker';
+          list-style: none;
+          gap: 1rem; }
+      .discografiaimg .contenedor-padre-discografia main .contdiscos .disco-end-of-grey {
+        width: 50%; } }
 
 li a {
   text-decoration: none;

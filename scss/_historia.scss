@@ -3,14 +3,15 @@
 @import"extend/extend.scss";
 /*...........html Historia...................*/
 .historiaimg {
-    background-color: black;
-    margin-top: 6rem;
+    background-color: rgba(10, 9, 9, 0.975);
+    margin-top: 5rem;
     header{
         .header-historia-mobile{
+            nav{
             .historianav{
                 .logochico{width:$logomobile;
                             }
-                        }
+                        }}
                                 }
         .header-historia{display: none;}
     }     

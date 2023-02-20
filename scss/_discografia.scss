@@ -4,11 +4,11 @@
 /*...........html discografia...................*/
 .discografiaimg {
     background-color: rgba(0, 0, 0, 0.913); 
-    
+    margin-top: 5rem;
         
 
    .contenedor-padre-discografia{
-        margin-top: 5rem;
+        
             header{
                 .header-index-mobile{
                     nav{
@@ -61,9 +61,9 @@
     }
 }
      @media screen and (min-width:768px){
-        .discografiaimg{
+        .discografiaimg{margin-top: 3rem;
         .contenedor-padre-discografia{
-            margin-top: 3rem;
+            
                 header{
                     .header-index-mobile{display: none;}
                     .header-discografia {@include header-tablet;
@@ -91,7 +91,7 @@
                 
 
             @media screen and (min-width:1024px){
-                .discografiaimg {
+                .discografiaimg {margin-top: 0.5rem;
                     .contenedor-padre-discografia{
                         display: grid;
                         grid-template-columns:1fr;
@@ -103,7 +103,7 @@
                         "footer-disco" /*footer-discografia*/
                         ;
 
-                        margin-top: 0.5rem;
+                        
                         header{
                             .header-index-mobile{}
                             .header-discografia{@include header-nav;

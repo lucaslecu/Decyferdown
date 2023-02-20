@@ -7,10 +7,10 @@
          background-image: url(../img/recitales.jpg);
          background-size: cover;
          height: 100vh;
-                 
+         margin-top:5rem ;        
   .contenedor-padre-recitales{
     height:100vh;
-    margin-top:6rem ;
+    
       .header-recitales{
             .header-reci-mobile{
                 nav{
@@ -30,7 +30,26 @@
                 @extend %flexcolun;
                     .h1-recital{padding-left: 2.5rem;
                                 padding-right: 2.5rem;}
-                               
+                    .tabla-reci{ background-color: rgba(220, 128, 232, 0.301);
+                      padding: 0.5rem 0.7rem;
+                      margin: 0.5rem;
+                      border-radius: 2rem;
+                            box-shadow: 10px 10px 20px;
+                            border-color: aliceblue;
+                          table{
+                            
+                            thead{
+                              tr{color: rgba(1, 0, 8, 0.677);
+                                 font-size: 1.5rem; 
+                                } }
+                            tbody{ 
+                                   tr{
+                                    color: rgba(1, 0, 8, 0.677);
+                                    font-size: 1.2rem; 
+                                   }
+                            }    
+                          }
+                    }           
                     .entradas-h2{
                                 color: aliceblue;
                                 padding-left: 0.3rem;
@@ -40,9 +59,9 @@
         }                    
     
         @media screen and (min-width:768px){
-            .recitalesimg {
+            .recitalesimg {margin-top: 3rem;
                 .contenedor-padre-recitales{
-                    margin-top: 3rem;
+                  
                     .header-recitales{
                         .header-reci-mobile{display: none;}
 
@@ -55,8 +74,15 @@
                                         }}
                            .logochico{width:$logotablet;
                                     }
-                                }  
-                                    }
+                                }  }
+                    .main-reci{
+                      .entradas-h2{
+                        color: black;
+                        text-shadow: 2px 2px 2px;
+                        
+                        margin-top: 2rem;
+                      }
+                    }              
 
 
 
@@ -75,7 +101,7 @@
 
              @media screen and (min-width:1024px){
                 /*..........Estructura html recitales con grid desktop*/
-                .recitalesimg {
+                .recitalesimg {margin-top: 0.5rem;
                         .contenedor-padre-recitales{
                         
                         display: grid;
@@ -100,7 +126,12 @@
                                             padding-left: 3rem;}
                                         }  
                                             }
-                            .main-reci{grid-area: main-re;}
+                            .main-reci{grid-area: main-re;
+                              .entradas-h2{
+                                color: rgba(250, 250, 250, 0.885);
+                                text-shadow: 2px 2px 2px;
+                              }
+                            }
                             .section-reci{grid-area: section-re;}
                             .footer-reci{grid-area: footerr-re;}
                        }
