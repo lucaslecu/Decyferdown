@@ -71,7 +71,8 @@
         align-items: center;
         justify-content: center;
         margin-top: 2rem;
-        margin-bottom: 1rem; }
+        margin-bottom: 1rem;
+        text-shadow: 0px 0px 10px #7a7b34ea; }
     .homepagina .contenedor-padre .section-index .titulo-index {
       font-size: 3rem; }
     .homepagina .contenedor-padre .main-index {
@@ -152,19 +153,26 @@ footer {
   align-items: center;
   justify-content: center; }
 
+.historiaimg .main-historia .h1-historia .intengrantes, .historiaimg .main-historia .contenedor .parrafo-historia {
+  font-family: 'Shadows Into Light', cursive; }
+
 /*...........html Historia...................*/
 .historiaimg {
-  background-color: rgba(10, 9, 9, 0.975);
+  background: black;
+  background: linear-gradient(193deg, rgba(0, 0, 0, 0.919622) 4%, #0b0c19 14%, #090a14 49%);
   margin-top: 5rem; }
   .historiaimg header .header-historia-mobile nav .historianav .logochico {
     width: 40%; }
   .historiaimg header .header-historia {
     display: none; }
-  .historiaimg .main-historia .intengrantes {
+  .historiaimg .main-historia .h1-historia .intengrantes {
     margin-bottom: 2rem;
     color: azure; }
   .historiaimg .main-historia .contenedor .contenedor-imagen-historia {
-    width: 80%; }
+    width: 80%;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 20px;
+    border-color: aliceblue; }
   .historiaimg .main-historia .contenedor .parrafo-historia {
     margin: 2rem 1.5rem;
     color: azure; }
@@ -193,7 +201,15 @@ footer {
         align-items: center;
         justify-content: center;
         margin-top: 2rem;
-        margin-bottom: 1rem; } }
+        margin-bottom: 1rem;
+        text-shadow: 0px 0px 10px #7a7b34ea; }
+    .historiaimg .main-historia .contenedor .parrafo-historia {
+      font-size: 1.5rem;
+      margin-left: 9rem;
+      margin-right: 8rem; }
+    .historiaimg .main-historia .contenedor .contenedor-imagen-historia {
+      height: 500px;
+      width: 500px; } }
 
 @media screen and (min-width: 1024px) {
   .historiaimg {
@@ -229,8 +245,8 @@ footer {
         justify-content: center;
         margin: 2rem; }
         .historiaimg .main-historia .contenedor .contenedor-imagen-historia {
-          width: 35%;
-          height: 100%; }
+          height: 500px;
+          width: 500px; }
         .historiaimg .main-historia .contenedor .parrafo-historia {
           width: 40%;
           height: 100%; }
@@ -242,6 +258,9 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+
+.historiaimg .main-historia .h1-historia .intengrantes, .historiaimg .main-historia .contenedor .parrafo-historia {
+  font-family: 'Shadows Into Light', cursive; }
 
 .recitalesimg {
   background-image: url(../img/recitales.jpg);
@@ -296,7 +315,8 @@ footer {
         align-items: center;
         justify-content: center;
         margin-top: 2rem;
-        margin-bottom: 1rem; }
+        margin-bottom: 1rem;
+        text-shadow: 0px 0px 10px #7a7b34ea; }
       .recitalesimg .contenedor-padre-recitales .header-recitales .header-reci .logochico {
         width: 50%; }
     .recitalesimg .contenedor-padre-recitales .main-reci .entradas-h2 {
@@ -348,6 +368,9 @@ footer {
   align-items: center;
   justify-content: center; }
 
+.historiaimg .main-historia .h1-historia .intengrantes, .historiaimg .main-historia .contenedor .parrafo-historia {
+  font-family: 'Shadows Into Light', cursive; }
+
 .videosimg {
   background-image: url(../img/videos-fondo.webp);
   background-size: cover;
@@ -388,7 +411,8 @@ footer {
         align-items: center;
         justify-content: center;
         margin-top: 2rem;
-        margin-bottom: 1rem; } }
+        margin-bottom: 1rem;
+        text-shadow: 0px 0px 10px #7a7b34ea; } }
 
 @media screen and (min-width: 1024px) {
   .videosimg {
@@ -432,6 +456,9 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+
+.historiaimg .main-historia .h1-historia .intengrantes, .historiaimg .main-historia .contenedor .parrafo-historia {
+  font-family: 'Shadows Into Light', cursive; }
 
 /*...........html discografia...................*/
 .discografiaimg {
@@ -493,7 +520,8 @@ footer {
         align-items: center;
         justify-content: center;
         margin-top: 2rem;
-        margin-bottom: 1rem; } }
+        margin-bottom: 1rem;
+        text-shadow: 0px 0px 10px #7a7b34ea; } }
 
 @media screen and (min-width: 1024px) {
   .discografiaimg {

@@ -3,7 +3,8 @@
 @import"extend/extend.scss";
 /*...........html Historia...................*/
 .historiaimg {
-    background-color: rgba(10, 9, 9, 0.975);
+    background: rgb(0,0,0);
+    background: linear-gradient(193deg, rgba(0,0,0,0.9196219486849648) 4%, rgba(11,12,25,1) 14%, rgba(9,10,20,1) 49%);
     margin-top: 5rem;
     header{
         .header-historia-mobile{
@@ -16,13 +17,19 @@
         .header-historia{display: none;}
     }     
     .main-historia{@extend %flexcolun;
-        .intengrantes{margin-bottom: 2rem;
-                      color: azure;
+        .h1-historia{
+        .intengrantes{@extend %texto-historia;
+                      margin-bottom: 2rem;
+                      color: azure;}
             
                      }
         .contenedor{@extend %flexcolun;
-            .contenedor-imagen-historia{width: 80%;}
-            .parrafo-historia{margin: 2rem 1.5rem ;
+            .contenedor-imagen-historia{width: 80%;
+                border-radius: 2rem;
+                box-shadow: 10px 10px 20px;
+                border-color: aliceblue;}
+            .parrafo-historia{@extend %texto-historia;
+                              margin: 2rem 1.5rem ;
                               color: azure;}
                     }
     }
@@ -37,11 +44,24 @@
             .header-historia-mobile{display: none;}
             .header-historia{@include header-tablet;                   
                 .logochico{width: $logotablet; }
-                .menu-index{@include menu-tablet;}            
+                .menu-index{@include menu-tablet;
+                    }            
             }
                                     
                         }
-            
+        .main-historia{
+            .contenedor{
+                .parrafo-historia{
+                    font-size:1.5rem;
+                    margin-left: 9rem;
+                    margin-right: 8rem;
+                }
+                .contenedor-imagen-historia{
+                    height: 500px;
+                    width: 500px;
+                }
+            }
+        }    
     }     
 
 }
@@ -67,7 +87,11 @@
                           padding-left:3rem;  }
                 nav{
                     .menu-index{
-                        @include flex-botones;}
+                        @include flex-botones;
+                        
+                     
+                
+                    }
                 }
             }
 
@@ -79,8 +103,12 @@
             align-items:center;
             justify-content: center;
             margin: 2rem;
-            .contenedor-imagen-historia{width:35%
-                ;height:100%;
+            
+            .contenedor-imagen-historia{
+                height: 500px;
+                width: 500px;
+                
+                
                                         }
             .parrafo-historia{
                 width:40% ;
