@@ -17,20 +17,34 @@
         .header-historia{display: none;}
     }     
     .main-historia{@extend %flexcolun;
-        .h1-historia{
-        .intengrantes{@extend %texto-historia;
+        .h1-historia{@extend %flexcolun;
+                    @extend %texto-historia;
+            .intro-historia{display: none;
+                margin:2rem 3rem;
+                color:$color-principal-texto;
+                font-size: 1.5rem; 
+            }
+            .intengrantes{@extend %texto-historia;
+                      text-decoration: underline;
                       margin-bottom: 2rem;
-                      color: azure;}
+                      color:$color-principal-texto}
             
                      }
         .contenedor{@extend %flexcolun;
+            border-bottom: 3px solid $color-principal-texto;
+            border-width: 2px;
+           
+            width: 80%;
+            margin-bottom: 1.5rem;
+            margin-top: 1.5rem;
+            
             .contenedor-imagen-historia{width: 80%;
                 border-radius: 2rem;
                 box-shadow: 10px 10px 20px;
                 border-color: aliceblue;}
             .parrafo-historia{@extend %texto-historia;
                               margin: 2rem 1.5rem ;
-                              color: azure;}
+                              color:$color-principal-texto}
                     }
     }
 }
@@ -50,6 +64,9 @@
                                     
                         }
         .main-historia{
+            .h1-historia{
+                .intro-historia{display: block;}
+            }
             .contenedor{
                 .parrafo-historia{
                     font-size:1.5rem;

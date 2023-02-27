@@ -17,6 +17,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caramel&family=Permanent+Marker&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!--animacion -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <!-- alt + z es para que se reajuste el texto a la pantalla-->
 <body class="videosimg">
@@ -74,14 +77,39 @@
                   </div>
        </header>
 <main class="main-videos">
-    <div class="videos-contenedor">
+    <div class="videos-contenedor"data-aos="fade-up" data-aos-duration="3000">
         
-        <h1 class="h1-videos">Videos</h1>
-        <h2 class="h2-recital">Recital Colon año 2022</h2>
+        <h1 class="h1-videos"data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Coleccion de videos</h1>
+        <h2 class="h2-intro-videos">"¡Bienvenido a la sección de videos en vivo de Decyfer Down! Disfruta de una colección de algunos de sus mejores videos en vivo, donde podrás experimentar su música en su estado más puro. Vive la emoción de sus recitales como si estuvieras ahí en persona. ¡Disfruta!"</h2> 
+        <h3 class="h2-recital">Recital Colon año 2022</h3>
         <div class="contenedor-video">
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/8LowmTVoilE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-    </div>
+        
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/8LowmTVoilE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          
+        
+      </div></div>
+    <div class="barra"></div>
 
+    <div class="videos-contenedor"data-aos="fade-up" data-aos-duration="3000">
+        
+      <h3 class="h2-recital">Fading Live</h3>
+      <div class="contenedor-video">
+      
+      <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Czah1Wjipr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+      
+      </div></div>
+      <div class="barra"></div>
+    <div class="videos-contenedor"data-aos="fade-up" data-aos-duration="3000">
+     
+    <h3 class="h2-recital">Live at CampRockfest</h3>
+    <div class="contenedor-video">
+    
+    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/s7YNeCQieI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    
+  </div></div>
+    <div class="barra"></div>
 </main>
 
 <footer class="footer-videos">
@@ -94,6 +122,10 @@
     
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
 
