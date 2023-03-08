@@ -542,6 +542,14 @@ footer {
   .discografiaimg .contenedor-padre-discografia header .header-discografia {
     grid-area: header-dis;
     display: none; }
+  .discografiaimg .contenedor-padre-discografia main .barra {
+    border-bottom: 3px solid #f7f7ef;
+    border-width: 2px;
+    width: 80%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto; }
   .discografiaimg .contenedor-padre-discografia main .titulosdiscografia {
     grid-area: h12-dis; }
     .discografiaimg .contenedor-padre-discografia main .titulosdiscografia .titulo-discografia {

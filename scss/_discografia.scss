@@ -25,6 +25,13 @@
                             }
                      }
             main{
+                .barra{border-bottom: 3px solid $color-principal-texto;
+                    border-width: 2px;
+                    width: 80%;
+                    margin-bottom: 2rem;
+                    margin-top: 2rem;
+                    margin-left: auto;
+                    margin-right: auto;}
                 .titulosdiscografia{
                     @extend %flexcolun;
                     grid-area:h12-dis;
