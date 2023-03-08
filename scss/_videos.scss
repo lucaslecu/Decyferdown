@@ -2,8 +2,12 @@
 @import"var/logo-var";
 @import"extend/extend.scss";
 .videosimg {
-    background: rgb(30,25,41);
-background: linear-gradient(180deg, rgba(30,25,41,1) 12%, rgba(43,35,62,1) 31%, rgba(63,52,77,1) 77%);
+    background: rgb(35,27,51);
+                    background: radial-gradient(circle, rgba(35,27,51,1) 67%, rgba(12,10,18,1) 97%);
+                    
+                    border-radius: 1rem;
+                    box-shadow: 10px 16px 40px;
+                    
 
     margin-top: 5rem;
     header{
@@ -36,20 +40,30 @@ background: linear-gradient(180deg, rgba(30,25,41,1) 12%, rgba(43,35,62,1) 31%, 
                 color:$color-principal-texto;
                 text-decoration: underline;
                 font-size: 2rem;
+                text-shadow: 0px 0px 9px #508AD3;
+                font-weight: 900;
                     
             }
-            .h2-intro-videos{
-                @extend %texto-historia;
-                margin:2rem 3rem;
-                color:$color-principal-texto;
-                font-size: 1.3rem;
-            }
+        
+                
+                .h2-intro-videos{
+                    @extend %texto-historia;
+                    color:$color-principal-texto;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    padding: 3rem 2rem 8rem 2rem;
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                    box-shadow: 2px 5px 9px #d0bbde;}
+                
+                
+                    
             .h2-recital{
                 @extend %texto-historia;
                 color:$color-principal-texto;
-                
+                text-shadow: 0px 0px 9px #508AD3;
                 font-size: 1.5rem;
-                
+                font-weight: 600;
             }
             .contenedor-video{
                 display: flex;
@@ -135,13 +149,12 @@ background: linear-gradient(180deg, rgba(30,25,41,1) 12%, rgba(43,35,62,1) 31%, 
                 .main-videos{
                     grid-area: main-v;
                     
-                    
-                    
                    
                     
                     .videos-contenedor{
                         justify-content: center;
                         align-items: center;
+                        
                         .contenedor-video{
                             .video{
                                 position: absolute;

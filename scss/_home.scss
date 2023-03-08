@@ -1,5 +1,6 @@
 @import"mixin/botones-flex";
 @import"var/logo-var";
+@import"extend/extend.scss";
 /*...............html index.................*/
 
    .homepagina {
@@ -17,9 +18,11 @@
                                }
             .section-index{
                   .titulo-index{
-                  color:$color-principal-texto; 
-                  text-decoration:underline;
+                        @extend %texto-historia;
+                        color:rgba(166, 167, 145, 0.836);
+                        text-decoration: underline;
                   font-size:1.5rem;
+                  font-weight: 600;
                   text-align: center;
                   margin-bottom:1.5rem;
                  /*..........Animacion h1 cuando arranca pagina*/
@@ -46,8 +49,10 @@
                   align-items: center;
                                       }
                 .parrafo-index          {
-                  color:rgba(166, 167, 145, 0.836);
-                  font-family: 'Permanent Marker', cursive;
+                  color:rgba(175, 176, 161, 0.836);
+                  @extend %texto-historia;
+                  font-weight: 600;
+                  text-decoration: underline;
                   margin-left: 10px;
                                        }
                     }                

@@ -3,8 +3,11 @@
 @import"extend/extend.scss";
 /*...........html discografia...................*/
 .discografiaimg {
-    background-color: rgba(0, 0, 0, 0.913); 
-    margin-top: 5rem;
+                    background: rgb(35,27,51);
+                    background: radial-gradient(circle, rgba(35,27,51,1) 67%, rgba(12,10,18,1) 97%);
+                    
+                    border-radius: 1rem;
+                    box-shadow: 10px 16px 40px;
         
 
    .contenedor-padre-discografia{
@@ -26,31 +29,41 @@
                     @extend %flexcolun;
                     grid-area:h12-dis;
                     .titulo-discografia{
-                        color: azure;
+                        @extend %texto-historia;
+                        color:$color-principal-texto;
+                        text-decoration: underline;
                         font-size:2.5rem ;
+                        padding-top: 4rem;
                         padding-bottom:2rem ;
+                        font-weight: 800;
                                      }
-                    .discos{color: azure;
-                            padding-bottom: 1rem;
-                                    }                 
+                                 
                 } 
                 .contdiscos{
                     @extend %flexcolun;
 
                     grid-area:discos-dis;
-                        .disco-end-of-grey{
+                    .discos{@extend %texto-historia;
+                        color:$color-principal-texto;
+                        margin-left:2rem;
+                        margin-right: 1rem;
+                        padding-bottom: 1rem;
+                        font-weight: 600;
+                                }    
+                        .discos-img{
                             width: 70%;
                             border-radius: 2rem;
-                            box-shadow: 10px 10px 20px;
-                            border-color: aliceblue;
-                            padding-bottom:0.5rem ;
+                            box-shadow: 7px 3px 9px #d0bbde;
+                            padding-bottom:0.1rem ;
                             margin-bottom: 1.5rem;
                               }  
                          nav{
-                            ol {color: azure;
+                            ol {@extend %texto-historia;
+                                color:$color-principal-texto;
                                 font-size:1.5rem ;
                                 li{color: azure;
-                                font-size: 1rem;}
+                                font-size: 1rem;
+                                font-weight: 600;}
                                }  
                             }   
                         
@@ -73,17 +86,17 @@
                             @include menu-tablet;
                         }
                     }
+                    }}
+                main {
+                    .titulosdiscografia{
+                        .titulo-discografia{padding-top: 2rem;}
                     }
-                        
-                
-                
-                
-                
-                }
-                    
-                    
-                    
-                    
+                    .contdiscos{
+                    .discos-img{
+                                width: 50%;
+                            }
+                        }
+                    }
         } 
        }             
                     
@@ -116,8 +129,8 @@
                         }
                         main {
                             .contdiscos{
-                                .disco-end-of-grey{
-                                    width: 50%;
+                                .discos-img{
+                                    width: 40%;
                                 }
                             }
                         }

@@ -5,6 +5,15 @@
   padding: 0;
   box-sizing: border-box; }
 
+.historiaimg .main-historia, .historiaimg .main-historia .h1-historia, .historiaimg .main-historia .contenedor, .recitalesimg .contenedor-padre-recitales .main-reci, .videosimg .main-videos .videos-contenedor, .discografiaimg .contenedor-padre-discografia main .titulosdiscografia, .discografiaimg .contenedor-padre-discografia main .contdiscos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.homepagina .contenedor-padre .section-index .titulo-index, .homepagina .contenedor-padre .main-index .parrafo-index, .historiaimg .main-historia .h1-historia, .historiaimg .main-historia .h1-historia .intengrantes, .historiaimg .main-historia .contenedor .parrafo-historia, .videosimg .main-videos .videos-contenedor .h1-videos, .videosimg .main-videos .videos-contenedor .h2-intro-videos, .videosimg .main-videos .videos-contenedor .h2-recital, .discografiaimg .contenedor-padre-discografia main .titulosdiscografia .titulo-discografia, .discografiaimg .contenedor-padre-discografia main .contdiscos .discos, .discografiaimg .contenedor-padre-discografia main .contdiscos nav ol {
+  font-family: 'Shadows Into Light', cursive; }
+
 /*...............html index.................*/
 .homepagina {
   margin-top: 5rem;
@@ -15,9 +24,10 @@
   .homepagina .contenedor-padre .head-index-grid .header-index {
     display: none; }
   .homepagina .contenedor-padre .section-index .titulo-index {
-    color: #f7f7ef;
+    color: rgba(166, 167, 145, 0.836);
     text-decoration: underline;
     font-size: 1.5rem;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 1.5rem;
     /*..........Animacion h1 cuando arranca pagina*/
@@ -42,8 +52,9 @@
       height: auto;
       align-items: center; }
     .homepagina .contenedor-padre .main-index .parrafo-index {
-      color: rgba(166, 167, 145, 0.836);
-      font-family: 'Permanent Marker', cursive;
+      color: rgba(175, 176, 161, 0.836);
+      font-weight: 600;
+      text-decoration: underline;
       margin-left: 10px; }
 
 /*..........Media queries en tablet*................. */
@@ -153,7 +164,7 @@ footer {
   align-items: center;
   justify-content: center; }
 
-.historiaimg .main-historia .h1-historia, .historiaimg .main-historia .h1-historia .intengrantes, .historiaimg .main-historia .contenedor .parrafo-historia, .videosimg .main-videos .videos-contenedor .h1-videos, .videosimg .main-videos .videos-contenedor .h2-intro-videos, .videosimg .main-videos .videos-contenedor .h2-recital {
+.homepagina .contenedor-padre .section-index .titulo-index, .homepagina .contenedor-padre .main-index .parrafo-index, .historiaimg .main-historia .h1-historia, .historiaimg .main-historia .h1-historia .intengrantes, .historiaimg .main-historia .contenedor .parrafo-historia, .videosimg .main-videos .videos-contenedor .h1-videos, .videosimg .main-videos .videos-contenedor .h2-intro-videos, .videosimg .main-videos .videos-contenedor .h2-recital, .discografiaimg .contenedor-padre-discografia main .titulosdiscografia .titulo-discografia, .discografiaimg .contenedor-padre-discografia main .contdiscos .discos, .discografiaimg .contenedor-padre-discografia main .contdiscos nav ol {
   font-family: 'Shadows Into Light', cursive; }
 
 /*...........html Historia...................*/
@@ -173,7 +184,8 @@ footer {
   .historiaimg .main-historia .h1-historia .intengrantes {
     text-decoration: underline;
     margin-bottom: 2rem;
-    color: #f7f7ef; }
+    color: #f7f7ef;
+    text-shadow: 0px 0px 9px #508AD3; }
   .historiaimg .main-historia .contenedor {
     border-bottom: 3px solid #f7f7ef;
     border-width: 2px;
@@ -273,7 +285,7 @@ footer {
   align-items: center;
   justify-content: center; }
 
-.historiaimg .main-historia .h1-historia, .historiaimg .main-historia .h1-historia .intengrantes, .historiaimg .main-historia .contenedor .parrafo-historia, .videosimg .main-videos .videos-contenedor .h1-videos, .videosimg .main-videos .videos-contenedor .h2-intro-videos, .videosimg .main-videos .videos-contenedor .h2-recital {
+.homepagina .contenedor-padre .section-index .titulo-index, .homepagina .contenedor-padre .main-index .parrafo-index, .historiaimg .main-historia .h1-historia, .historiaimg .main-historia .h1-historia .intengrantes, .historiaimg .main-historia .contenedor .parrafo-historia, .videosimg .main-videos .videos-contenedor .h1-videos, .videosimg .main-videos .videos-contenedor .h2-intro-videos, .videosimg .main-videos .videos-contenedor .h2-recital, .discografiaimg .contenedor-padre-discografia main .titulosdiscografia .titulo-discografia, .discografiaimg .contenedor-padre-discografia main .contdiscos .discos, .discografiaimg .contenedor-padre-discografia main .contdiscos nav ol {
   font-family: 'Shadows Into Light', cursive; }
 
 .recitalesimg {
@@ -382,12 +394,14 @@ footer {
   align-items: center;
   justify-content: center; }
 
-.historiaimg .main-historia .h1-historia, .historiaimg .main-historia .h1-historia .intengrantes, .historiaimg .main-historia .contenedor .parrafo-historia, .videosimg .main-videos .videos-contenedor .h1-videos, .videosimg .main-videos .videos-contenedor .h2-intro-videos, .videosimg .main-videos .videos-contenedor .h2-recital {
+.homepagina .contenedor-padre .section-index .titulo-index, .homepagina .contenedor-padre .main-index .parrafo-index, .historiaimg .main-historia .h1-historia, .historiaimg .main-historia .h1-historia .intengrantes, .historiaimg .main-historia .contenedor .parrafo-historia, .videosimg .main-videos .videos-contenedor .h1-videos, .videosimg .main-videos .videos-contenedor .h2-intro-videos, .videosimg .main-videos .videos-contenedor .h2-recital, .discografiaimg .contenedor-padre-discografia main .titulosdiscografia .titulo-discografia, .discografiaimg .contenedor-padre-discografia main .contdiscos .discos, .discografiaimg .contenedor-padre-discografia main .contdiscos nav ol {
   font-family: 'Shadows Into Light', cursive; }
 
 .videosimg {
-  background: #1e1929;
-  background: linear-gradient(180deg, #1e1929 12%, #2b233e 31%, #3f344d 77%);
+  background: #231b33;
+  background: radial-gradient(circle, #231b33 67%, #0c0a12 97%);
+  border-radius: 1rem;
+  box-shadow: 10px 16px 40px;
   margin-top: 5rem; }
   .videosimg header .header-index-mobile nav .container-fluid .logochico {
     width: 40%; }
@@ -404,14 +418,22 @@ footer {
   .videosimg .main-videos .videos-contenedor .h1-videos {
     color: #f7f7ef;
     text-decoration: underline;
-    font-size: 2rem; }
+    font-size: 2rem;
+    text-shadow: 0px 0px 9px #508AD3;
+    font-weight: 900; }
   .videosimg .main-videos .videos-contenedor .h2-intro-videos {
-    margin: 2rem 3rem;
     color: #f7f7ef;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 3rem 2rem 8rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 2px 5px 9px #d0bbde; }
   .videosimg .main-videos .videos-contenedor .h2-recital {
     color: #f7f7ef;
-    font-size: 1.5rem; }
+    text-shadow: 0px 0px 9px #508AD3;
+    font-size: 1.5rem;
+    font-weight: 600; }
   .videosimg .main-videos .videos-contenedor .contenedor-video {
     display: flex;
     justify-content: center;
@@ -506,13 +528,15 @@ footer {
   align-items: center;
   justify-content: center; }
 
-.historiaimg .main-historia .h1-historia, .historiaimg .main-historia .h1-historia .intengrantes, .historiaimg .main-historia .contenedor .parrafo-historia, .videosimg .main-videos .videos-contenedor .h1-videos, .videosimg .main-videos .videos-contenedor .h2-intro-videos, .videosimg .main-videos .videos-contenedor .h2-recital {
+.homepagina .contenedor-padre .section-index .titulo-index, .homepagina .contenedor-padre .main-index .parrafo-index, .historiaimg .main-historia .h1-historia, .historiaimg .main-historia .h1-historia .intengrantes, .historiaimg .main-historia .contenedor .parrafo-historia, .videosimg .main-videos .videos-contenedor .h1-videos, .videosimg .main-videos .videos-contenedor .h2-intro-videos, .videosimg .main-videos .videos-contenedor .h2-recital, .discografiaimg .contenedor-padre-discografia main .titulosdiscografia .titulo-discografia, .discografiaimg .contenedor-padre-discografia main .contdiscos .discos, .discografiaimg .contenedor-padre-discografia main .contdiscos nav ol {
   font-family: 'Shadows Into Light', cursive; }
 
 /*...........html discografia...................*/
 .discografiaimg {
-  background-color: rgba(0, 0, 0, 0.913);
-  margin-top: 5rem; }
+  background: #231b33;
+  background: radial-gradient(circle, #231b33 67%, #0c0a12 97%);
+  border-radius: 1rem;
+  box-shadow: 10px 16px 40px; }
   .discografiaimg .contenedor-padre-discografia header .header-index-mobile nav .container-fluid .logochico {
     width: 40%; }
   .discografiaimg .contenedor-padre-discografia header .header-discografia {
@@ -521,27 +545,33 @@ footer {
   .discografiaimg .contenedor-padre-discografia main .titulosdiscografia {
     grid-area: h12-dis; }
     .discografiaimg .contenedor-padre-discografia main .titulosdiscografia .titulo-discografia {
-      color: azure;
+      color: #f7f7ef;
+      text-decoration: underline;
       font-size: 2.5rem;
-      padding-bottom: 2rem; }
-    .discografiaimg .contenedor-padre-discografia main .titulosdiscografia .discos {
-      color: azure;
-      padding-bottom: 1rem; }
+      padding-top: 4rem;
+      padding-bottom: 2rem;
+      font-weight: 800; }
   .discografiaimg .contenedor-padre-discografia main .contdiscos {
     grid-area: discos-dis; }
-    .discografiaimg .contenedor-padre-discografia main .contdiscos .disco-end-of-grey {
+    .discografiaimg .contenedor-padre-discografia main .contdiscos .discos {
+      color: #f7f7ef;
+      margin-left: 2rem;
+      margin-right: 1rem;
+      padding-bottom: 1rem;
+      font-weight: 600; }
+    .discografiaimg .contenedor-padre-discografia main .contdiscos .discos-img {
       width: 70%;
       border-radius: 2rem;
-      box-shadow: 10px 10px 20px;
-      border-color: aliceblue;
-      padding-bottom: 0.5rem;
+      box-shadow: 7px 3px 9px #d0bbde;
+      padding-bottom: 0.1rem;
       margin-bottom: 1.5rem; }
     .discografiaimg .contenedor-padre-discografia main .contdiscos nav ol {
-      color: azure;
+      color: #f7f7ef;
       font-size: 1.5rem; }
       .discografiaimg .contenedor-padre-discografia main .contdiscos nav ol li {
         color: azure;
-        font-size: 1rem; }
+        font-size: 1rem;
+        font-weight: 600; }
   .discografiaimg .contenedor-padre-discografia .footer-discografia {
     grid-area: footer-disco; }
 
@@ -570,7 +600,11 @@ footer {
         justify-content: center;
         margin-top: 2rem;
         margin-bottom: 1rem;
-        text-shadow: 0px 0px 10px #7a7b34ea; } }
+        text-shadow: 0px 0px 10px #7a7b34ea; }
+    .discografiaimg .contenedor-padre-discografia main .titulosdiscografia .titulo-discografia {
+      padding-top: 2rem; }
+    .discografiaimg .contenedor-padre-discografia main .contdiscos .discos-img {
+      width: 50%; } }
 
 @media screen and (min-width: 1024px) {
   .discografiaimg {
@@ -598,8 +632,8 @@ footer {
           font-family: 'Permanent Marker';
           list-style: none;
           gap: 1rem; }
-      .discografiaimg .contenedor-padre-discografia main .contdiscos .disco-end-of-grey {
-        width: 50%; } }
+      .discografiaimg .contenedor-padre-discografia main .contdiscos .discos-img {
+        width: 40%; } }
 
 li a {
   text-decoration: none;
