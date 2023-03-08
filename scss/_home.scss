@@ -52,7 +52,6 @@
                   color:rgba(175, 176, 161, 0.836);
                   @extend %texto-historia;
                   font-weight: 600;
-                  text-decoration: underline;
                   margin-left: 10px;
                                        }
                     }                
@@ -125,7 +124,7 @@
                                        display: flex;
                                        flex-direction: row;
                                        justify-content: space-between;
-                                    
+                                          
                            .logo{width:$logodestock ;
                                 padding-left: 2rem;}
                           nav{.menu-index{
