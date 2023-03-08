@@ -124,7 +124,7 @@
                                        display: flex;
                                        flex-direction: row;
                                        justify-content: space-between;
-                                          
+
                            .logo{width:$logodestock ;
                                 padding-left: 2rem;}
                           nav{.menu-index{
@@ -140,14 +140,12 @@
                               }
                   .main-homee{
                      grid-area:main-home;   
-                     flex-direction: row-reverse;
-                     align-items: start;
+                     
                            .contenedor-imagen-index{
-                                 justify-self: start;
-                                 width: 50%;
-                                 height:50% ;
+                                 float: left;
+                                 margin-right: 20px;
                                                    }
-                            .parrafo-index{margin-bottom: 5rem;}                          }
+                            .parrafo-index{margin: 0;}                          }
                   .section-index { grid-area:h1-home;
                         
                         .titulo-index{ font-size: 1.5rem;

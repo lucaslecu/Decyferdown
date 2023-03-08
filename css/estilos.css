@@ -125,15 +125,12 @@
             list-style: none;
             gap: 1rem; }
       .homepagina .contenedor-padre .main-homee {
-        grid-area: main-home;
-        flex-direction: row-reverse;
-        align-items: start; }
+        grid-area: main-home; }
         .homepagina .contenedor-padre .main-homee .contenedor-imagen-index {
-          justify-self: start;
-          width: 50%;
-          height: 50%; }
+          float: left;
+          margin-right: 20px; }
         .homepagina .contenedor-padre .main-homee .parrafo-index {
-          margin-bottom: 5rem; }
+          margin: 0; }
       .homepagina .contenedor-padre .section-index {
         grid-area: h1-home; }
         .homepagina .contenedor-padre .section-index .titulo-index {
