@@ -19,8 +19,10 @@
   margin-top: 5rem;
   background-image: url("../img/DD-Top-Banner-2016.jpg");
   height: 100vh; }
-  .homepagina .contenedor-padre .head-index-grid .header-index-mobile .container-fluid .logochico {
-    width: 40%; }
+  .homepagina .contenedor-padre .head-index-grid .header-index-mobile .container-fluid .aaa {
+    display: inline; }
+    .homepagina .contenedor-padre .head-index-grid .header-index-mobile .container-fluid .aaa .logochico {
+      width: 50%; }
   .homepagina .contenedor-padre .head-index-grid .header-index {
     display: none; }
   .homepagina .contenedor-padre .section-index .titulo-index {
@@ -176,7 +178,7 @@ footer {
   background: linear-gradient(193deg, rgba(0, 0, 0, 0.919622) 4%, #0b0c19 14%, #090a14 49%);
   margin-top: 5rem; }
   .historiaimg header .header-historia-mobile nav .historianav .logochico {
-    width: 40%; }
+    width: 50%; }
   .historiaimg header .header-historia {
     display: none; }
   .historiaimg .main-historia .h1-historia .intro-historia {
@@ -202,7 +204,8 @@ footer {
       border-color: aliceblue; }
     .historiaimg .main-historia .contenedor .parrafo-historia {
       margin: 2rem 1.5rem;
-      color: #f7f7ef; }
+      color: #f7f7ef;
+      font-size: 1.6rem; }
 
 @media screen and (min-width: 768px) {
   .historiaimg {
@@ -268,6 +271,8 @@ footer {
         gap: 1rem; }
     .historiaimg .main-historia {
       grid-area: main-his; }
+      .historiaimg .main-historia .h1-historia .intro-historia {
+        font-size: 2.2rem; }
       .historiaimg .main-historia .contenedor {
         flex-direction: row;
         align-items: center;
@@ -278,7 +283,8 @@ footer {
           width: 500px; }
         .historiaimg .main-historia .contenedor .parrafo-historia {
           width: 40%;
-          height: 100%; }
+          height: 100%;
+          font-size: 2rem; }
     .historiaimg .footer-historia {
       grid-area: footer-his; } }
 
@@ -301,7 +307,7 @@ footer {
   .recitalesimg .contenedor-padre-recitales {
     height: 100vh; }
     .recitalesimg .contenedor-padre-recitales .header-recitales .header-reci-mobile nav .container-fluid .logochico {
-      width: 40%; }
+      width: 50%; }
     .recitalesimg .contenedor-padre-recitales .header-recitales .header-reci {
       display: none; }
     .recitalesimg .contenedor-padre-recitales .main-reci .h1-recital {
@@ -416,7 +422,7 @@ footer {
   box-shadow: 10px 16px 40px;
   margin-top: 5rem; }
   .videosimg header .header-index-mobile nav .container-fluid .logochico {
-    width: 40%; }
+    width: 50%; }
   .videosimg header .header-videos {
     display: none; }
   .videosimg .main-videos .barra {
@@ -550,7 +556,7 @@ footer {
   border-radius: 1rem;
   box-shadow: 10px 16px 40px; }
   .discografiaimg .contenedor-padre-discografia header .header-index-mobile nav .container-fluid .logochico {
-    width: 40%; }
+    width: 50%; }
   .discografiaimg .contenedor-padre-discografia header .header-discografia {
     grid-area: header-dis;
     display: none; }

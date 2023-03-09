@@ -11,8 +11,9 @@
             .head-index-grid{
                .header-index-mobile{
                               .container-fluid{
+                                    .aaa{display: inline;
                                     
-                                  .logochico{width:$logomobile ;}  
+                                  .logochico{width:$logomobile ;}}  
                                           }
                                     }      
                .header-index{display: none;}
