@@ -321,10 +321,10 @@ footer {
       .recitalesimg .contenedor-padre-recitales .main-reci .tabla-reci table thead tr {
         color: rgba(1, 0, 8, 0.677);
         font-size: 1.5rem;
-        font-weight: 400; }
+        font-weight: bold; }
       .recitalesimg .contenedor-padre-recitales .main-reci .tabla-reci table tbody tr {
         color: rgba(1, 0, 8, 0.677);
-        font-weight: 400;
+        font-weight: bold;
         font-size: 1.2rem; }
     .recitalesimg .contenedor-padre-recitales .main-reci .entradas-h2 {
       color: white;

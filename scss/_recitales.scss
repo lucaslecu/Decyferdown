@@ -51,12 +51,12 @@
                               tr{@extend %texto-historia;
                                 color: rgba(1, 0, 8, 0.677);
                                  font-size: 1.5rem;
-                                 font-weight: 400; 
+                                 font-weight: bold; 
                                 } }
                             tbody{ 
                                    tr{@extend %texto-historia;
                                     color: rgba(1, 0, 8, 0.677);
-                                    font-weight: 400;
+                                    font-weight: bold;
                                     font-size: 1.2rem; 
                                    }
                             }    
